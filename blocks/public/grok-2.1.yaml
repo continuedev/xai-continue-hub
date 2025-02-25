@@ -1,0 +1,12 @@
+name: grok 2.1
+version: 0.0.1
+schema: v1
+
+models:
+  - name: grok 2.1
+    provider: xAI
+    model: grok-beta
+    contextLength: 128000,
+    apiKey: ${{ inputs.XAI_API_KEY  }}
+    roles:
+      - chat
