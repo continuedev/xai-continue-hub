@@ -1,6 +1,6 @@
 name: Publish Continue Assistant/Block(s)
 
-on:
+on:  # yamllint disable-line rule:truthy
   push:
     branches:
       - main

@@ -1,12 +1,14 @@
-name: grok 2.1
-version: 0.0.1
+name: Grok 2
+version: 1.0.0
 schema: v1
 
 models:
-  - name: grok 2.1
+  - name: Grok 2
     provider: xAI
-    model: grok-beta
+    model: grok-2-latest
     contextLength: 128000,
     apiKey: ${{ inputs.XAI_API_KEY  }}
     roles:
       - chat
+      - edit
+      - apply
