@@ -11,7 +11,6 @@ on:  # yamllint disable-line rule:truthy
 
 jobs:
   lint:
-    runs-on: action-runner-large-cpu-gcp
     steps:
       - name: Checkout
         uses: actions/checkout@v4
