@@ -1,0 +1,21 @@
+name: Lint YAML Files
+
+on:  # yamllint disable-line rule:truthy
+  push:
+    branches:
+      - main
+  pull_request:
+    types:
+      - opened
+      - synchronize
+
+jobs:
+  lint:
+    runs-on: action-runner-large-cpu-gcp
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install yamllint
+        run: pip install yamllint
+      - name: Lint
+        run: yamllint .

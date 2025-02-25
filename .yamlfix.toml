@@ -1,0 +1,4 @@
+sequence_style = "block_style"
+line_length = 80
+explicit_start = false
+section_whitelines = 1
