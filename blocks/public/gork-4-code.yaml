@@ -1,0 +1,14 @@
+name: Grok 4
+version: 1.0.0
+schema: v1
+
+models:
+  - name: Grok 4
+    provider: xAI
+    model: grok-4-code-latest
+    contextLength: 131072
+    apiKey: ${{ inputs.XAI_API_KEY  }}
+    roles:
+      - chat
+      - edit
+      - apply
