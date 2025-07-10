@@ -5,7 +5,7 @@ schema: v1
 models:
   - name: Grok 4
     provider: xAI
-    model: grok-4-code-0629
+    model: grok-4
     contextLength: 131072
     apiKey: ${{ inputs.XAI_API_KEY  }}
     roles:
