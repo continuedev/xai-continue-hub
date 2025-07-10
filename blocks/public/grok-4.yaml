@@ -8,6 +8,8 @@ models:
     model: grok-4
     contextLength: 131072
     apiKey: ${{ inputs.XAI_API_KEY  }}
+    capabilities:
+      - tool_use
     roles:
       - chat
       - edit
